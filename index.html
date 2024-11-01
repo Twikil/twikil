@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twikil_Resume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex; /* Flexbox applied here for side-by-side layout */
+    }
+
+    .sidebar {
+      background-color: #d4f213; /* Sidebar background color */
+      width: 200px; /* Set sidebar width */
+      padding: 20px;
+      display: flex; /* Flexbox for sidebar content layout (optional) */
+      flex-direction: column;
+      font-size: large;
+       /* Stack elements vertically */
+    }
+
+    .main-content {
+      flex:1; /* Take up remaining space */
+      padding: 20px;
+      font-style:normal;
+    }
+
+    .side-content {
+      flex: 1;
+      padding: 20px;
+      font-style: normal;
+    }
+    
+
+    header {
+      background-color: #edeff1;
+      color: #0d0d0d;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .headerTitle {
+      margin: 0;
+      color: #f6fafa;
+    }
+
+    h1 {
+      margin: 0;
+      color: #0f0e0e;
+      
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2 style="text-align:center;"> Navigation </h2>
+      <ul>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#additional-information">Additional Information</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <header>
+        <h1>Twikil<br>Fullstack Developer</h1>
+        <p>twikil.g0131@gmail.com | 8688091981</p>
+      </header>
+      
+
+      <section id="objective">
+        <h2>Objective</h2>
+        <p>I pursued BTech in Computer Science and Engineering at Amrita School Of Engineering, Chennai,Tamilnadu, India. I
+            exhibit an adaptive character being flexible enough to work through challenging environments and is eager to learn
+            new ideas and approaches. Enjoy working closely with team members to ensure workloads are effectively redirected
+            to bottleneck and personally picking up the slack when necessary.</p>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <h3>Bussiness development associate</h3>
+            <p>Planet Spark | gurugram, Delhi | 30-04-2024 - Ongoing</p>
+            <ul>
+              <li>Guided students through the platform, ensuring a seamless onboarding experience and addressing queries related
+                to curriculum and learning resources.</li>
+              <li>Leveraged communication and problem-solving skills to build strong relationships with students and parents,
+                ensuring high engagement and satisfaction.</li>
+              <li>Used data-driven insights to monitor student progress and provide timely interventions for academic success.</li>
+            </ul>
+        </section>
+        <section id="education">
+          <h2>Education</h2>
+          <ul>
+              <li><h3>BTECH,CSE</h3></li>
+              <p>Amrita Vishwa Vidyapeetham  | Chennai, Tamil naidu | Graduation Year-2024</p>
+              <li><h3>Board of Intermediate</h3></li>
+              <p> Narayana | vishakapatnam, Andhra Pradesh| 2018-2020</p>
+              <li><h3>Secondary Education</h3></li>
+              <p>Narayana | vishakapatnam, Andhra Pradesh| 2017-2018</p>
+          </ul>  
+        </section>
+      
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><b>Programming Languages:</b>Python, Java(basics)</li><br>
+          <li><b>Web Technologies:</b>HTML,CSS,JS,React.js</li><br>
+          <li><b>Database Systems:</b>MySQL, MongoDB,</li><br>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><p>TO DO REACT BASED WEB APPLICATION</p></li>
+            <li><p>EMOTION RECOGNITION</p></li>
+            <li><p>LEVERAGING ML FOR REAL TIME DETECTION PREVENTION OF CS THREATS</p></li>
+        </ul>
+      </section>
+      
+
+      <section id="additional-information">
+        <h2>Additional information</h2>
+        <ul>
+          <li><p><b>Languages:</b> Telugu (Proficiency level), English (Proficiency level), Hindi (Proficiency level)</p></li>
+          <li><p><b>Interests:</b> Badminton</p></li>
+        </ul>
+      </section>
+    </div>
+    <div class="side-content">
+      <header>
+        <h1>Do ping me for more details</h1>
+      </header>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"required><br><br>
+      
+        <label for="role">Role:</label>
+        
+        <input type="radio" id="technical" name="role" value="technical">
+        <label for="technical">Technical</label>
+    
+        <input type="radio" id="Non-technical" name="role" value="Non-technical">
+        <label for="Non-technical">Non-Technical</label><br><br>
+      
+        <label for="package">Package:</label>
+        <input type="text" name="alphanumeric_field" pattern="[a-zA-Z0-9]+" required><br><br>
+      
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+      
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="3" cols="30" required></textarea><br><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+
+  </div>
+
+</body>
+</html>
